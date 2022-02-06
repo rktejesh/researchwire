@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif' rel='stylesheet' type='text/css'>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,8 +22,8 @@
             </div>
         </div>
     </div>
-    <div class="director-message">
-        <div class="director-message__img">
+    <div class="director-message" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
+        <div class="director-message__img"> 
             <img src="/assets/img/ceo-woman-Depositphotos_12497994_xl-2015-800w.jpg">
         </div>
         <div class="director-message__content">
@@ -43,7 +44,7 @@
         </div>
     </div>
 
-    <div>
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
         <div id="contenitore">
             <div class="left">
 
@@ -99,7 +100,7 @@
         <div class="pie-charts">
             <div class="pieID--micro-skills pie-chart--wrapper">
                 <h2>Micro-Skills</h2>
-                <div class="pie-chart">
+                <div class="pie-chart" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
                     <div class="pie-chart__pie"></div>
                     <ul class="pie-chart__legend">
                         <li><em>Additive</em><span>642</span></li>
@@ -109,7 +110,7 @@
             </div>
             <div class="pieID--categories pie-chart--wrapper">
                 <h2>Categories</h2>
-                <div class="pie-chart">
+                <div class="pie-chart" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
                     <div class="pie-chart__pie"></div>
                     <ul class="pie-chart__legend">
                         <li><em>Horizontal</em><span>768</span></li>
@@ -119,7 +120,7 @@
             </div>
             <div class="pieID--operations pie-chart--wrapper">
                 <h2>Operations</h2>
-                <div class="pie-chart">
+                <div class="pie-chart" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
                     <div class="pie-chart__pie"></div>
                     <ul class="pie-chart__legend">
                         <li><em>Addition</em><span>486</span></li>
@@ -132,10 +133,11 @@
         </div>
     </div>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         var tl = 0;
         $(window).scroll(function () {
@@ -144,6 +146,9 @@
                 tl = 1;
             }
         })
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
