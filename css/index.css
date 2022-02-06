@@ -3,7 +3,7 @@ body {
   /* COLOR PALLETE */
   --color--background: #f9f7f7;
   --color--text: #000000;
-  --color-primary-color: #dbe2ef;
+  --color-primary-color: #ffffff;
   --color-secondary-color: #3f72af;
   --color-tertiary-color: #112d4e;
 
@@ -19,15 +19,21 @@ body {
 }
 
 #banner {
-  background: url(/assets/img/SECURA-15.webp) no-repeat fixed 100% 100%;
-  background-size: cover;
   color: rgb(255, 255, 255);
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+#banner img {
+  background: url(/assets/img/SECURA-15.webp) no-repeat fixed 100% 100%;
+  background-size: cover;
   opacity: 0.8;
+  height: inherit;
+  width: inherit;
 }
 
 .director-message {
