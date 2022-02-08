@@ -1,155 +1,721 @@
 <!DOCTYPE html>
+
+<!-- 
+  Theme Name: Enlight
+  Theme URL: https://probootstrap.com/enlight-free-education-responsive-bootstrap-website-template
+  Author: ProBootstrap.com
+  Author URL: https://probootstrap.com
+  License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
+-->
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif' rel='stylesheet' type='text/css'>
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProBootstrap:Enlight &mdash; Free Bootstrap Theme, Free Responsive Bootstrap Website Template</title>
+  <meta name="description" content="Free Bootstrap Theme by ProBootstrap.com">
+  <meta name="keywords"
+    content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles-merged.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+
+  <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-    <div style="background-color: black; height: inherit; width:inherit">
-        <div id="banner">
-            <img src="/assets/img/SECURA-15.webp">
-            <div id="bannertext">
-                <h1>2021,The year that<br> was: Highlights</h1>
-            </div>
-        </div>
-    </div>
-    <div class="director-message" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
-        <div class="director-message__img"> 
-            <img src="/assets/img/ceo-woman-Depositphotos_12497994_xl-2015-800w.jpg">
-        </div>
-        <div class="director-message__content">
-            <h1>Director's Message</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin pellentesque, est ut venenatis aliquam,
-                lorem
-                quam porttitor ligula, eget ultrices velit dui sed quam. Praesent vehicula placerat lectus. Nulla pede.
-                Quisque
-                a nulla quis massa pulvinar sagittis. Pellentesque neque massa, mattis vulputate, pellentesque nec,
-                vehicula
-                volutpat, purus. Proin pretium dui et nulla cursus eleifend. Aenean aliquam urna eget urna. Vestibulum
-                euismod
-                elit. Donec eget augue sit amet neque elementum pretium. Proin posuere lacus id lacus. Duis vel justo
-                suscipit
-                neque ornare iaculis.
-            </p>
-        </div>
-    </div>
 
-    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
-        <div id="contenitore">
-            <div class="left">
+  <div class="probootstrap-search" id="probootstrap-search">
+    <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+    <form action="#">
+      <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
+    </form>
+  </div>
 
-                <table>
-                    <caption>Date table</caption>
-                    <tbody>
-                        <tr>
-                            <td>A</td>
-                            <td>80%</td>
-                            <td style="background-color:#336699">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>B</td>
-                            <td>68%</td>
-                            <td style="background-color:#003366">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>C</td>
-                            <td>30%</td>
-                            <td style="background-color:#ff6600">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>D</td>
-                            <td>20%</td>
-                            <td style="background-color:#ffcc00">&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="button" onclick="viewGraph()">Rerun</div>
+  <div class="probootstrap-page-wrapper">
+    <!-- Fixed navbar -->
+
+    <!-- <div class="probootstrap-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+              <span><i class="icon-location2"></i>Brooklyn, NY 10036, United States</span>
+              <span><i class="icon-phone2"></i>+1-123-456-7890</span>
+              <span><i class="icon-mail"></i>info@probootstrap.com</span>
             </div>
-            <div class="left">
-                <div id="grafico">
-                    <div class="riga" style="top:25%">
-                        <div>75%</div>
-                    </div>
-                    <div class="riga" style="top:50%">
-                        <div>50%</div>
-                    </div>
-                    <div class="riga" style="top:75%">
-                        <div>25%</div>
-                    </div>
-                    <div id="col0" style="left:0; background-color:#336699;" class="column"></div>
-                    <div id="col1" style="left:25%; background-color:#003366;" class="column"></div>
-                    <div id="col2" style="left:50%; background-color:#ff6600;" class="column"></div>
-                    <div id="col3" style="left:75%; background-color:#ffcc00;" class="column"></div>
-                </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+              </ul>
             </div>
-            <div class="canc"></div>
+          </div>
         </div>
-    </div>
+      </div> -->
+    <!-- <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" title="ProBootstrap:Enlight">Enlight</a>
+          </div>
 
-    <div class="wrapper">
-        <div class="pie-charts">
-            <div class="pieID--micro-skills pie-chart--wrapper">
-                <h2>Micro-Skills</h2>
-                <div class="pie-chart" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="pie-chart__pie"></div>
-                    <ul class="pie-chart__legend">
-                        <li><em>Additive</em><span>642</span></li>
-                        <li><em>Multiplicative</em><span>358</span></li>
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="teachers.html">Teachers</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="courses.html">Courses</a></li>
+                  <li><a href="course-single.html">Course Single</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="pieID--categories pie-chart--wrapper">
-                <h2>Categories</h2>
-                <div class="pie-chart" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="pie-chart__pie"></div>
-                    <ul class="pie-chart__legend">
-                        <li><em>Horizontal</em><span>768</span></li>
-                        <li><em>Vertical</em><span>232</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pieID--operations pie-chart--wrapper">
-                <h2>Operations</h2>
-                <div class="pie-chart" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="pie-chart__pie"></div>
-                    <ul class="pie-chart__legend">
-                        <li><em>Addition</em><span>486</span></li>
-                        <li><em>Subtraction</em><span>156</span></li>
-                        <li><em>Multiplication</em><span>215</span></li>
-                        <li><em>Division</em><span>143</span></li>
-                    </ul>
-                </div>
-            </div>
+                  </li>
+                  <li><a href="news.html">News</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
+      </nav> -->
+
+    <section class="flexslider">
+      <ul class="slides">
+        <li style="background-image: url(img/office_RW_real_estate_hdr.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center">
+                  <h1 class="probootstrap-heading probootstrap-animate">Your Bright Future is Our Mission</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(img/international_conf_photos_v2_faces_x2_toned.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center">
+                  <h1 class="probootstrap-heading probootstrap-animate">Education is Life</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </li>
+        <li style="background-image: url(img/Team_RW.png)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center">
+                  <h1 class="probootstrap-heading probootstrap-animate">Helping Each of Our Students Fulfill the
+                    Potential</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="probootstrap-section probootstrap-section-colored">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-left section-heading probootstrap-animate">
+            <h2>2021 The year that was: Highlights</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="probootstrap-flex-block">
+              <div class="probootstrap-text probootstrap-animate">
+                <h3>Director's Message</h3>
+                <p>Praveen Singh undertakes a broad range of patent activities, granting him an excellent
+                  strategic understanding of the field. The co-founder of Researchwire has cracked the code when it
+                  comes to giving an efficient but high-quality service.</p>
+                <p class="probootstrap-date">Praveen Singh<br>
+                  Co-founder, Researchwire</p>
+              </div>
+              <div class="probootstrap-image probootstrap-animate" style="background-image: url(img/slider_3.jpg)">
+                <img src="img/WhatsApp Image 2022-02-06 at 10.45.03 PM.jpeg" height="400px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section" id="probootstrap-counter">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+            <div class="probootstrap-counter-wrap">
+              <div class="probootstrap-icon">
+                <i class="icon-users2"></i>
+              </div>
+              <div class="probootstrap-text">
+                <span class="probootstrap-counter">
+                  <span class="js-counter" data-from="0" data-to="20203" data-speed="5000"
+                    data-refresh-interval="50">1</span>
+                </span>
+                <span class="probootstrap-counter-label">Students Enrolled</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+            <div class="probootstrap-counter-wrap">
+              <div class="probootstrap-icon">
+                <i class="icon-user-tie"></i>
+              </div>
+              <div class="probootstrap-text">
+                <span class="probootstrap-counter">
+                  <span class="js-counter" data-from="0" data-to="139" data-speed="5000"
+                    data-refresh-interval="50">1</span>
+                </span>
+                <span class="probootstrap-counter-label">Certified Teachers</span>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix visible-sm-block visible-xs-block"></div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+            <div class="probootstrap-counter-wrap">
+              <div class="probootstrap-icon">
+                <i class="icon-library"></i>
+              </div>
+              <div class="probootstrap-text">
+                <span class="probootstrap-counter">
+                  <span class="js-counter" data-from="0" data-to="99" data-speed="5000"
+                    data-refresh-interval="50">1</span>%
+                </span>
+                <span class="probootstrap-counter-label">Passing to Universities</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+
+            <div class="probootstrap-counter-wrap">
+              <div class="probootstrap-icon">
+                <i class="icon-smile2"></i>
+              </div>
+              <div class="probootstrap-text">
+                <span class="probootstrap-counter">
+                  <span class="js-counter" data-from="0" data-to="100" data-speed="5000"
+                    data-refresh-interval="50">1</span>%
+                </span>
+                <span class="probootstrap-counter-label">Parents Satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="probootstrap-section probootstrap-section-colored probootstrap-bg probootstrap-custom-heading probootstrap-tab-section"
+      style="background-image: url(img/banner.jpg)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center section-heading probootstrap-animate">
+            <h2 class="mb0"></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row my-3">
+        <div class="col">
+          <h4>Bootstrap 4 Chart.js</h4>
+        </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-md-6 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chLine"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chBar"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-2">
+        <div class="col-md-4 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chDonut1"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chDonut2"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chDonut3"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/js/index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        var tl = 0;
-        $(window).scroll(function () {
-            if (isIntoView($('.wrapper')) && tl === 0) {
-                createPieCharts();
-                tl = 1;
+    <section class="probootstrap-section probootstrap-bg probootstrap-section-colored"
+      style="background-image: url(img/slider_4.jpg);">
+      <div class="container">
+        <img src
+      </div>
+    </section>
+
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+            <h2>Why Choose Enlight School</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus
+              quos quibusdam soluta at.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="service left-icon probootstrap-animate">
+              <div class="icon"><i class="icon-checkmark"></i></div>
+              <div class="text">
+                <h3>Consectetur Adipisicing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos
+                  quibusdam soluta at.</p>
+              </div>
+            </div>
+            <div class="service left-icon probootstrap-animate">
+              <div class="icon"><i class="icon-checkmark"></i></div>
+              <div class="text">
+                <h3>Aliquid Dolorum Saepe</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos
+                  quibusdam soluta at.</p>
+              </div>
+            </div>
+            <div class="service left-icon probootstrap-animate">
+              <div class="icon"><i class="icon-checkmark"></i></div>
+              <div class="text">
+                <h3>Eveniet Tempora Anisi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos
+                  quibusdam soluta at.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service left-icon probootstrap-animate">
+              <div class="icon"><i class="icon-checkmark"></i></div>
+              <div class="text">
+                <h3>Laboriosam Quod Dignissimos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos
+                  quibusdam soluta at.</p>
+              </div>
+            </div>
+
+            <div class="service left-icon probootstrap-animate">
+              <div class="icon"><i class="icon-checkmark"></i></div>
+              <div class="text">
+                <h3>Asperiores Maxime Modi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos
+                  quibusdam soluta at.</p>
+              </div>
+            </div>
+
+            <div class="service left-icon probootstrap-animate">
+              <div class="icon"><i class="icon-checkmark"></i></div>
+              <div class="text">
+                <h3>Libero Maxime Molestiae</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos
+                  quibusdam soluta at.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- END row -->
+      </div>
+    </section>
+
+    <section class="probootstrap-cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="probootstrap-animate" data-animate-effect="fadeInRight"></h2>
+            <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate"
+              data-animate-effect="fadeInLeft">Know more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="probootstrap-footer probootstrap-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="probootstrap-footer-widget">
+              <h3>About The School</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab
+                minus illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet
+                alias</p>
+              <h3>Social</h3>
+              <ul class="probootstrap-footer-social">
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                <li><a href="#"><i class="icon-github"></i></a></li>
+                <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-push-1">
+            <div class="probootstrap-footer-widget">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="probootstrap-footer-widget">
+              <h3>Contact Info</h3>
+              <ul class="probootstrap-contact-info">
+                <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
+                <li><i class="icon-mail"></i><span>info@domain.com</span></li>
+                <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- END row -->
+
+      </div>
+    </footer>
+
+  </div>
+  <!-- END wrapper -->
+
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.5.0/src/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.5.0/dist/Chart.bundle.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script>
+    /* chart.js chart examples */
+
+    // chart colors
+    var colors = ['#007bff', '#28a745', '#333333', '#c3e6cb', '#dc3545', '#6c757d'];
+
+    /* large line chart */
+    var chLine = document.getElementById("chLine");
+    var chartData = {
+      labels: ["S", "M", "T", "W", "T", "F", "S"],
+      datasets: [{
+        data: [589, 445, 483, 503, 689, 692, 634],
+        backgroundColor: 'transparent',
+        borderColor: colors[0],
+        borderWidth: 4,
+        pointBackgroundColor: colors[0]
+      }
+        //   {
+        //     data: [639, 465, 493, 478, 589, 632, 674],
+        //     backgroundColor: colors[3],
+        //     borderColor: colors[1],
+        //     borderWidth: 4,
+        //     pointBackgroundColor: colors[1]
+        //   }
+      ]
+    };
+    if (chLine) {
+      new Chart(chLine, {
+        type: 'line',
+        data: chartData,
+        options: {
+          scales: {
+            xAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false
+          },
+          responsive: true
+        }
+      });
+    }
+
+    /* large pie/donut chart */
+    var chPie = document.getElementById("chPie");
+    if (chPie) {
+      new Chart(chPie, {
+        type: 'pie',
+        data: {
+          labels: ['Desktop', 'Phone', 'Tablet', 'Unknown'],
+          datasets: [
+            {
+              backgroundColor: [colors[1], colors[0], colors[2], colors[5]],
+              borderWidth: 0  ,
+              data: [50, 40, 15, 5]
             }
-        })
-    </script>
-    <script>
-        AOS.init();
-    </script>
+          ]
+        },
+        plugins: [{
+          beforeDraw: function (chart) {
+            var width = chart.chart.width,
+              height = chart.chart.height,
+              ctx = chart.chart.ctx;
+            ctx.restore();
+            var fontSize = (height / 70).toFixed(2);
+            ctx.font = fontSize + "em sans-serif";
+            ctx.textBaseline = "middle";
+            var text = chart.config.data.datasets[0].data[0] + "%",
+              textX = Math.round((width - ctx.measureText(text).width) / 2),
+              textY = height / 2;
+            ctx.fillText(text, textX, textY);
+            ctx.save();
+          }
+        }],
+        options: { layout: { padding: 0 }, legend: { display: false }, cutoutPercentage: 80 }
+      });
+    }
+
+    /* bar chart */
+    var chBar = document.getElementById("chBar");
+    if (chBar) {
+      new Chart(chBar, {
+        type: 'bar',
+        data: {
+          labels: ["S", "M", "T", "W", "T", "F", "S"],
+          datasets: [{
+            data: [589, 445, 483, 503, 689, 692, 634],
+            backgroundColor: colors[0]
+          },
+          {
+            data: [639, 465, 493, 478, 589, 632, 674],
+            backgroundColor: colors[1]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [{
+              barPercentage: 0.4,
+              categoryPercentage: 0.5
+            }]
+          }
+        }
+      });
+    }
+
+    /* 3 donut charts */
+    var donutOptions = {
+      cutoutPercentage: 85,
+      legend: { position: 'bottom', padding: 5, labels: { pointStyle: 'circle', usePointStyle: true } }
+    };
+
+    // donut 1
+    var chDonutData1 = {
+      labels: ['Bootstrap', 'Popper', 'Other'],
+      datasets: [
+        {
+          backgroundColor: colors.slice(0, 3),
+          borderWidth: 0,
+          data: [74, 11, 40]
+        }
+      ]
+    };
+
+    var chDonut1 = document.getElementById("chDonut1");
+    if (chDonut1) {
+      new Chart(chDonut1, {
+        type: 'pie',
+        data: chDonutData1,
+        options: donutOptions
+      });
+    }
+
+    // donut 2
+    var chDonutData2 = {
+      labels: ['Wips', 'Pops', 'Dags'],
+      datasets: [
+        {
+          backgroundColor: colors.slice(0, 3),
+          borderWidth: 0,
+          data: [40, 45, 30]
+        }
+      ]
+    };
+    var chDonut2 = document.getElementById("chDonut2");
+    if (chDonut2) {
+      new Chart(chDonut2, {
+        type: 'pie',
+        data: chDonutData2,
+        options: donutOptions
+      });
+    }
+
+    // donut 3
+    var chDonutData3 = {
+      labels: ['Angular', 'React', 'Other'],
+      datasets: [
+        {
+          backgroundColor: colors.slice(0, 3),
+          borderWidth: 5,
+          data: [21, 45, 55, 33],
+        }
+      ],
+    };
+    var chDonut3 = document.getElementById("chDonut3");
+    if (chDonut3) {
+      new Chart(chDonut3, {
+        type: 'pie',
+        data: chDonutData3,
+        options: donutOptions,
+      });
+    }
+
+    /* 3 line charts */
+    var lineOptions = {
+      legend: { display: false },
+      tooltips: { interest: false, bodyFontSize: 11, titleFontSize: 11 },
+      scales: {
+        xAxes: [
+          {
+            ticks: {
+              display: false
+            },
+            gridLines: {
+              display: false,
+              drawBorder: false
+            }
+          }
+        ],
+        yAxes: [{ display: false }]
+      },
+      layout: {
+        padding: {
+          left: 6,
+          right: 6,
+          top: 4,
+          bottom: 6
+        }
+      }
+    };
+
+    var chLine1 = document.getElementById("chLine1");
+    if (chLine1) {
+      new Chart(chLine1, {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+          datasets: [
+            {
+              backgroundColor: '#ffffff',
+              borderColor: '#ffffff',
+              data: [10, 11, 4, 11, 4],
+              fill: false
+            }
+          ]
+        },
+        options: lineOptions
+      });
+    }
+    var chLine2 = document.getElementById("chLine2");
+    if (chLine2) {
+      new Chart(chLine2, {
+        type: 'line',
+        data: {
+          labels: ['A', 'B', 'C', 'D', 'E'],
+          datasets: [
+            {
+              backgroundColor: '#ffffff',
+              borderColor: '#ffffff',
+              data: [4, 5, 7, 13, 12],
+              fill: false
+            }
+          ]
+        },
+        options: lineOptions
+      });
+    }
+
+    var chLine3 = document.getElementById("chLine3");
+    if (chLine3) {
+      new Chart(chLine3, {
+        type: 'line',
+        data: {
+          labels: ['Pos', 'Neg', 'Nue', 'Other', 'Unknown'],
+          datasets: [
+            {
+              backgroundColor: '#ffffff',
+              borderColor: '#ffffff',
+              data: [13, 15, 10, 9, 14],
+              fill: false
+            }
+          ]
+        },
+        options: lineOptions
+      });
+    }
+  </script>
+
+  
 </body>
 
 </html>
