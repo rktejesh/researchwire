@@ -5,29 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Axios Live Coding Session</title>
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif' rel='stylesheet' type='text/css'>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/css/index.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div style="background-color: black; height: inherit; width:inherit">
-        <div id="banner">
-            <img src="/assets/img/SECURA-15.webp">
-            <div id="bannertext">
-                <h1>2021,The year that<br> was: Highlights</h1>
-            </div>
+    <div id="banner">
+        <div id="bannertext">
+            <h1>Hello There<br> I am John Doe</h1>
         </div>
     </div>
-    <div class="director-message" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
-        <div class="director-message__img"> 
-            <img src="/assets/img/ceo-woman-Depositphotos_12497994_xl-2015-800w.jpg">
+    <div class="about-me">
+        <div class="about-me__img">
+            <img src="/assets/img/undraw_Developer_activity_re_39tg.png">
         </div>
-        <div class="director-message__content">
-            <h1>Director's Message</h1>
+        <div class="about-me__content">
+            <h1>About Me</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin pellentesque, est ut venenatis aliquam,
                 lorem
@@ -43,113 +39,6 @@
             </p>
         </div>
     </div>
-
-    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
-        <div id="contenitore">
-            <div class="left">
-
-                <table>
-                    <caption>Date table</caption>
-                    <tbody>
-                        <tr>
-                            <td>A</td>
-                            <td>80%</td>
-                            <td style="background-color:#336699">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>B</td>
-                            <td>68%</td>
-                            <td style="background-color:#003366">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>C</td>
-                            <td>30%</td>
-                            <td style="background-color:#ff6600">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>D</td>
-                            <td>20%</td>
-                            <td style="background-color:#ffcc00">&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="button" onclick="viewGraph()">Rerun</div>
-            </div>
-            <div class="left">
-                <div id="grafico">
-                    <div class="riga" style="top:25%">
-                        <div>75%</div>
-                    </div>
-                    <div class="riga" style="top:50%">
-                        <div>50%</div>
-                    </div>
-                    <div class="riga" style="top:75%">
-                        <div>25%</div>
-                    </div>
-                    <div id="col0" style="left:0; background-color:#336699;" class="column"></div>
-                    <div id="col1" style="left:25%; background-color:#003366;" class="column"></div>
-                    <div id="col2" style="left:50%; background-color:#ff6600;" class="column"></div>
-                    <div id="col3" style="left:75%; background-color:#ffcc00;" class="column"></div>
-                </div>
-            </div>
-            <div class="canc"></div>
-        </div>
-    </div>
-
-    <div class="wrapper">
-        <div class="pie-charts">
-            <div class="pieID--micro-skills pie-chart--wrapper">
-                <h2>Micro-Skills</h2>
-                <div class="pie-chart" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="pie-chart__pie"></div>
-                    <ul class="pie-chart__legend">
-                        <li><em>Additive</em><span>642</span></li>
-                        <li><em>Multiplicative</em><span>358</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pieID--categories pie-chart--wrapper">
-                <h2>Categories</h2>
-                <div class="pie-chart" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="pie-chart__pie"></div>
-                    <ul class="pie-chart__legend">
-                        <li><em>Horizontal</em><span>768</span></li>
-                        <li><em>Vertical</em><span>232</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pieID--operations pie-chart--wrapper">
-                <h2>Operations</h2>
-                <div class="pie-chart" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="pie-chart__pie"></div>
-                    <ul class="pie-chart__legend">
-                        <li><em>Addition</em><span>486</span></li>
-                        <li><em>Subtraction</em><span>156</span></li>
-                        <li><em>Multiplication</em><span>215</span></li>
-                        <li><em>Division</em><span>143</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/js/index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        var tl = 0;
-        $(window).scroll(function () {
-            if (isIntoView($('.wrapper')) && tl === 0) {
-                createPieCharts();
-                tl = 1;
-            }
-        })
-    </script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
